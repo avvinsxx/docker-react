@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t avvinsxx/docker-react -f Dockerfile.dev .
 script:
-  - docker run avvinsxx/docker-react
+  - docker run avvinsxx/docker-react npm run test -- --coverage
